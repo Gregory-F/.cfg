@@ -1,0 +1,31 @@
+#git abbr
+abbr -a -g gc 'git commit -m'
+abbr -a -g gclo 'git clone'
+abbr -a -g gps 'git push'
+abbr -a -g gpl 'git pull'
+
+#pacman abbr
+abbr -a -g orph 'pacman -Qdt'
+abbr -a -g inst 'sudo pacman -S'
+abbr -a -g maj 'sudo pacman -Syu'
+abbr -a -g cherch 'pacman -Ss'
+abbr -a -g remove 'sudo pacman -Rns'
+abbr -a -g clean 'sudo pacman -Sc'
+
+#fish / bash alliases
+abbr -a -g rm 'rm -v'
+abbr -a -g rmd 'rm -rvf'
+abbr -a -g mkdir 'mkdir -pv'
+abbr -a -g pg 'ping -c 5 8.8.8.8'
+abbr -a -g abrv 'cat ~/.config/fish/abrev'
+abbr -a -g fcf 'nano ~/.config/fish/config.fish'
+abbr -a -g goo 'nohup google-chrome-stable &'
+abbr -a -g eject 'sudo eject -v'
+
+#some ssh abreviations
+abbr -a -g arpa "sudo arp-scan 192.168.1.0/24"
+abbr -a -g yeuv "ssh -X emile@192.168.1.12"
+
+#timeshift abbr
+abbr -a -g list 'sudo timeshift --list'
+abbr -a -g back 'sudo timeshift --check'
