@@ -99,28 +99,36 @@ bindsym $mod+q focus parent
 #bindsym $mod+d focus child
 
 # switch to workspace
-bindsym $mod+ampersand workspace 1
-bindsym $mod+eacute workspace 2
-bindsym $mod+quotedbl workspace 3
+bindsym $mod+ampersand workspace Www
+bindsym $mod+eacute workspace Term
+bindsym $mod+quotedbl workspace  3
 bindsym $mod+apostrophe workspace 4
 bindsym $mod+parenleft workspace 5
 bindsym $mod+minus workspace 6
-bindsym $mod+egrave workspace 7
-bindsym $mod+underscore workspace 8
-bindsym $mod+ccedilla workspace 9
-bindsym $mod+agrave workspace 10
+bindsym $mod+egrave workspace 7 Vlc
+bindsym $mod+underscore workspace 8 PcManFm
+bindsym $mod+ccedilla workspace 9 LeafPad
+bindsym $mod+agrave workspace Atom
 
 # move focused container to workspace
-bindsym $mod+Shift+ampersand move container to workspace 1
-bindsym $mod+Shift+eacute move container to workspace 2
+bindsym $mod+Shift+ampersand move container to workspace Www
+bindsym $mod+Shift+eacute move container to workspace Term
 bindsym $mod+Shift+quotedbl move container to workspace 3
 bindsym $mod+Shift+apostrophe move container to workspace 4
 bindsym $mod+Shift+5 move container to workspace 5
 bindsym $mod+Shift+minus move container to workspace 6
-bindsym $mod+Shift+egrave move container to workspace 7
-bindsym $mod+Shift+underscore move container to workspace 8
-bindsym $mod+Shift+ccedilla move container to workspace 9
-bindsym $mod+Shift+agrave move container to workspace 10
+bindsym $mod+Shift+egrave move container to workspace 7 Vlc
+bindsym $mod+Shift+underscore move container to workspace 8 PcManFm
+bindsym $mod+Shift+ccedilla move container to workspace 9 LeafPad
+bindsym $mod+Shift+agrave move container to workspace Atom
+
+#moving some windows to specific WorkSpaces
+for_window [class="Pcmanfm"] move to workspace 8 PcManFm, workspace 8 PcManFm, focus
+for_window [class="vlc"] move to workspace 7 Vlc, workspace 7 Vlc, focus
+for_window [class="Atom"] move to workspace Atom, workspace Atom, focus
+for_window [class="Leafpad"] move to workspace 9 LeafPad, workspace 9 LeafPad, focus
+
+
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -170,6 +178,8 @@ bar {
 bindsym $mod+c exec "chromium"
 bindsym $mod+$alt+c exec "chromium --incognito"
 bindsym $mod+$alt+f exec "pcmanfm"
+bindsym $mod+$alt+g exec "google-chrome-stable"
+bindsym $mod+$alt+m exec "clementine"
 
 # shutdown
 bindsym $mod+Shift+s exec "shutdown now"
@@ -188,17 +198,18 @@ exec_always --no-startup-id numlockx
 # Mousepad scroll and clic:
 exec_always --no-startup-id synclient TapButton1=1
 exec_always --no-startup-id synclient VertEdgeScroll=1
+exec_always --no-startup-id synclient MaxSpeed=1.5
 #wallpaper:
-exec_always --no-startup-id feh --bg-scale /home/greg/images/truth.jpg
+exec_always --no-startup-id feh --bg-scale /home/greg/images/fhaller_surreal_sunset.jpg
 #compton
-exec_always --no-startup-id compton
+exec_always --no-startup-id picom
 
+#here we start a terminal in WorkSpace2, go back to WorkSpace1 and open chromium there
 exec chromium
-exec --no-startup-id i3-msg 'workspace 2; exec termite; workspace 1'
+exec --no-startup-id i3-msg 'workspace Term; exec termite; workspace Www'
 
 #title shenanigan
 for_window [class=".*"] title_format "   %title"
-
 
 
 # Pulse Audio controls
