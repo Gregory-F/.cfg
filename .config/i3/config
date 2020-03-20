@@ -200,8 +200,11 @@ exec_always --no-startup-id synclient TapButton1=1
 exec_always --no-startup-id synclient VertEdgeScroll=1
 exec_always --no-startup-id synclient MaxSpeed=1.5
 #wallpaper:
-exec_always --no-startup-id feh --bg-scale /home/greg/images/fhaller_surreal_sunset.jpg
-#compton
+#there are two versions: the ntrogen one and the feh one.
+#just uncomment the one necessary
+exec_allways --no-startup-id nitrogen --restor
+#exec_always --no-startup-id feh --bg-scale /home/greg/images/fhaller_surreal_sunset.jpg
+#compton or in arch picom.
 exec_always --no-startup-id picom
 
 #here we start a terminal in WorkSpace2, go back to WorkSpace1 and open chromium there

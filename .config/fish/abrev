@@ -43,9 +43,9 @@ abbr -a -g fm 'vifm ~'
 #some ssh abreviations
 abbr -a -g arpa "sudo arp-scan 192.168.1.0/24"
 abbr -a -g yeuv "ssh -y emile@192.168.1.12"
-abbr -a -g ouam "ssh -y totor@192.168.1.16"
+abbr -a -g ouam "ssh -y totor@192.168.1.17"
 #a rsync abrv
-abbr -a -g synct "rsync -ravzP --delete ~/usb/ totor@192.168.1.16:/home/totor/Documents/.usb"
+abbr -a -g synct "rsync -ravzP --delete ~/usb/ totor@192.168.1.17:/home/totor/Documents/.usb"
 
 #timeshift abbr
 abbr -a -g list 'sudo timeshift --list'

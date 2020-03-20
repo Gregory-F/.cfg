@@ -4,10 +4,10 @@
 #bold_is_bright = true
 #clickable_url = true
 #dynamic_title = true
-font = Monospace 11
+font = Monospace 13
 #fullscreen = true
 #icon_name = terminal
-#mouse_autohide = false
+mouse_autohide = true
 #scroll_on_output = false
 #scroll_on_keystroke = true
 # Length of the scrollback buffer, 0 disabled the scrollback buffer
@@ -44,7 +44,7 @@ scrollback_lines = 10000
 #cursor = #dcdccc
 #cursor_foreground = #dcdccc
 
-foreground = rgba(0, 255, 0, 0)
+foreground = rgba(75, 255, 150, 0)
 #foreground_bold = #ffffff
 #background = #3f3f3f
 
@@ -57,7 +57,7 @@ background = rgba(54, 44, 44, 0.8)
 # Colors from color0 to color254 can be set
 color0 = #3f3f3f
 color1 = #705050
-color2 = #60b48a
+color2 = #06C800
 color3 = #dfaf8f
 color4 = #506070
 color5 = #dc8cc3
@@ -74,7 +74,7 @@ color15 = #ffffff
 
 [hints]
 font = Monospace 14
-#foreground = #dcdccc
+#foreground = #06c800
 #background = #3f3f3f
 #active_foreground = #e68080
 #active_background = #3f3f3f
