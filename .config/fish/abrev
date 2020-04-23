@@ -7,7 +7,6 @@ abbr -a -g gpl 'git pull'
 #pacman abbr
 abbr -a -g orph 'pacman -Qdt'
 abbr -a -g inst 'sudo pacman -S'
-abbr -a -g maj 'sudo pacman -Syu'
 abbr -a -g cherch 'pacman -Ss'
 abbr -a -g remove 'sudo pacman -Rns'
 abbr -a -g clean 'yay -Sc'
@@ -18,10 +17,14 @@ abbr -a -g pvi 'pipenv install'
 abbr -a -g pvr 'pipenv run'
 abbr -a -g pt 'ipython'
 
-#fish / bash alliases
+#fish breviations
 abbr -a -g mv 'mv -v'
+abbr -a -g mvs 'sudo mv -v' 
 abbr -a -g rm 'rm -v'
+abbr -a -g rms 'sudo rm -v' 
 abbr -a -g rmd 'rm -rvf'
+abbr -a -g rms 'sudo rm -v'
+abbr -a -g rmds 'sudo rm -rvf'
 abbr -a -g mkdir 'mkdir -pv'
 abbr -a -g mount "sudo mount -v"
 abbr -a -g umount "sudo umount -Rv"
@@ -29,13 +32,9 @@ abbr -a -g cp "cp -v"
 abbr -a -g cpd "cp -rv"
 abbr -a -g pg 'ping -c 5 8.8.8.8'
 abbr -a -g abrv 'vim ~/.config/fish/abrev'
-abbr -a -g fcf 'vim ~/.config/fish/config.fish'
 abbr -a -g eject 'sudo eject -v'
-abbr -a -g met 'curl -H "Accept-Language: fr" wttr.in'
 abbr -a -g vik 'cat ~/documents/vikings'
 abbr -a -g jap 'cat ~/documents/japonnais'
-abbr -a -g quetes 'vim ~/documents/quetes'
-abbr -a -g book 'less ~/documents/books'
 abbr -a -g crl 'crontab -l'
 abbr -a -g cre 'crontab -e'
 abbr -a -g fm 'vifm ~'
