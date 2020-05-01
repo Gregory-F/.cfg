@@ -43,6 +43,5 @@ abbr -a -g fm 'vifm ~'
 abbr -a -g arpa "sudo arp-scan 192.168.1.0/24"
 abbr -a -g synct "rsync -ravzP --delete ~/usb/ totor@192.168.1.17:/home/totor/Documents/.usb"
 
-#timeshift abbr
-abbr -a -g list 'sudo timeshift --list'
-abbr -a -g back 'sudo timeshift --check'
+#backup abreviation
+abbr -a -g back 'sudo rdiff-backup -v 6 --exclude /home / backups/'
