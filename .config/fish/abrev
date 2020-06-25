@@ -45,7 +45,7 @@ abbr -a -g all 'systemctl list-timers --all'
 abbr -a -g reload 'systemctl daemon-reload'
 abbr -a -g status 'config status'
 abbr -a -g add 'config add'
-abbr -a -g commit 'config commit'
+abbr -a -g commit 'config commit -m'
 abbr -a -g push 'config push'
 
 #some ssh abreviations
