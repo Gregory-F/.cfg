@@ -177,9 +177,7 @@ bar {
 
 bindsym $mod+c exec "chromium"
 bindsym $mod+$alt+c exec "chromium --incognito"
-bindsym $mod+$alt+f exec "pcmanfm"
 bindsym $mod+$alt+g exec "google-chrome-stable"
-bindsym $mod+$alt+m exec "clementine"
 
 # shutdown
 bindsym $mod+Shift+s exec "shutdown now"
@@ -198,6 +196,7 @@ exec_always --no-startup-id numlockx
 # Mousepad scroll and clic:
 exec_always --no-startup-id synclient TapButton1=1
 exec_always --no-startup-id synclient VertEdgeScroll=1
+exec_always --no-startup-id synclient RightEdge=2404 
 #exec_always --no-startup-id synclient MaxSpeed=1.5
 #wallpaper:
 #there are two versions: the ntrogen one and the feh one.
