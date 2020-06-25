@@ -15,7 +15,7 @@ abbr -a -g clean 'yay -Sc'
 abbr -a -g pvs 'pipenv shell'
 abbr -a -g pvi 'pipenv install'
 abbr -a -g pvr 'pipenv run'
-abbr -a -g pt 'ipython'
+abbr -a -g pt 'clear;ipython'
 
 #fish breviations
 abbr -a -g mv 'mv -v'
@@ -37,7 +37,16 @@ abbr -a -g vik 'cat ~/documents/vikings'
 abbr -a -g jap 'cat ~/documents/japonnais'
 abbr -a -g crl 'crontab -l'
 abbr -a -g cre 'crontab -e'
-abbr -a -g fm 'vifm ~'
+abbr -a -g fm 'ranger'
+abbr -a -g nf 'clear;neofetch'
+abbr -a -g mus 'pushd ~/music/playlists/;cmus'
+abbr -a -g quetes 'vim ~/documents/quetes'
+abbr -a -g all 'systemctl list-timers --all'
+abbr -a -g reload 'systemctl daemon-reload'
+abbr -a -g status 'config status'
+abbr -a -g add 'config add'
+abbr -a -g commit 'config commit'
+abbr -a -g push 'config push'
 
 #some ssh abreviations
 abbr -a -g arpa "sudo arp-scan 192.168.1.0/24"
