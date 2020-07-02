@@ -199,10 +199,7 @@ exec_always --no-startup-id synclient VertEdgeScroll=1
 exec_always --no-startup-id synclient RightEdge=2404 
 #exec_always --no-startup-id synclient MaxSpeed=1.5
 #wallpaper:
-#there are two versions: the ntrogen one and the feh one.
-#just uncomment the one necessary
-exec_allways --no-startup-id nitrogen --restor
-#exec_always --no-startup-id feh --bg-scale /home/greg/images/fhaller_surreal_sunset.jpg
+exec_always --no-startup-id feh --bg-scale /usr/share/feh/images/background.jpg
 #compton or in arch picom.
 exec_always --no-startup-id picom
 
