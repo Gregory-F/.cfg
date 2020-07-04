@@ -105,10 +105,10 @@ bindsym $mod+quotedbl workspace  3
 bindsym $mod+apostrophe workspace 4
 bindsym $mod+parenleft workspace 5
 bindsym $mod+minus workspace 6
-bindsym $mod+egrave workspace 7 Vlc
-bindsym $mod+underscore workspace 8 PcManFm
-bindsym $mod+ccedilla workspace 9 LeafPad
-bindsym $mod+agrave workspace Atom
+bindsym $mod+egrave workspace 7
+bindsym $mod+underscore workspace 8
+bindsym $mod+ccedilla workspace 9
+bindsym $mod+agrave workspace 0
 
 # move focused container to workspace
 bindsym $mod+Shift+ampersand move container to workspace Www
@@ -117,17 +117,13 @@ bindsym $mod+Shift+quotedbl move container to workspace 3
 bindsym $mod+Shift+apostrophe move container to workspace 4
 bindsym $mod+Shift+5 move container to workspace 5
 bindsym $mod+Shift+minus move container to workspace 6
-bindsym $mod+Shift+egrave move container to workspace 7 Vlc
-bindsym $mod+Shift+underscore move container to workspace 8 PcManFm
-bindsym $mod+Shift+ccedilla move container to workspace 9 LeafPad
-bindsym $mod+Shift+agrave move container to workspace Atom
+bindsym $mod+Shift+egrave move container to workspace 7
+bindsym $mod+Shift+underscore move container to workspace 8
+bindsym $mod+Shift+ccedilla move container to workspace 9
+bindsym $mod+Shift+agrave move container to workspace 0
 
 #moving some windows to specific WorkSpaces
-for_window [class="Pcmanfm"] move to workspace 8 PcManFm, workspace 8 PcManFm, focus
-for_window [class="vlc"] move to workspace 7 Vlc, workspace 7 Vlc, focus
-for_window [class="Atom"] move to workspace Atom, workspace Atom, focus
-for_window [class="Leafpad"] move to workspace 9 LeafPad, workspace 9 LeafPad, focus
-
+#for_window [class="Pcmanfm"] move to workspace 8 PcManFm, workspace 8 PcManFm, focus
 
 
 # reload the configuration file
