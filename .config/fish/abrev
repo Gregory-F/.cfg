@@ -26,24 +26,24 @@ abbr -a -g mvs 'sudo mv -v'
 abbr -a -g rm 'rm -v'
 abbr -a -g rms 'sudo rm -v' 
 abbr -a -g rmd 'rm -rvf'
-abbr -a -g rms 'sudo rm -v'
 abbr -a -g rmds 'sudo rm -rvf'
 abbr -a -g mkdir 'mkdir -pv'
 abbr -a -g mount "sudo mount -v"
 abbr -a -g umount "sudo umount -Rv"
 abbr -a -g cp "cp -v"
 abbr -a -g cpd "cp -rv"
+abbr -a -g cps "sudo cp -v"
+abbr -a -g cpds "sudo cp -rv"
 abbr -a -g pg 'ping -c 5 8.8.8.8'
 abbr -a -g abrv 'vim ~/.config/fish/abrev'
 abbr -a -g eject 'sudo eject -v'
-abbr -a -g vik 'cat ~/documents/vikings'
-abbr -a -g jap 'cat ~/documents/japonnais'
 abbr -a -g crl 'crontab -l'
 abbr -a -g cre 'crontab -e'
 abbr -a -g fm 'ranger'
 abbr -a -g nf 'clear;neofetch'
-abbr -a -g mus 'pushd ~/music/playlists/;cmus'
-abbr -a -g quetes 'vim ~/documents/quetes'
+abbr -a -g aquetes 'vim ~/documents/aquetes'
+abbr -a -g equetes 'vim ~/documents/equetes'
+abbr -a -g uquetes 'vim ~/documents/uquetes'
 abbr -a -g all 'systemctl list-timers --all'
 abbr -a -g reload 'systemctl daemon-reload'
 abbr -a -g status 'config status'
