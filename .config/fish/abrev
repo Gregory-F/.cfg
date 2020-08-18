@@ -28,6 +28,7 @@ abbr -a -g rms 'sudo rm -v'
 abbr -a -g rmd 'rm -rvf'
 abbr -a -g rmds 'sudo rm -rvf'
 abbr -a -g mkdir 'mkdir -pv'
+abbr -a -g mkdirs 'sudo mkdir -pv'
 abbr -a -g mount "sudo mount -v"
 abbr -a -g umount "sudo umount -Rv"
 abbr -a -g cp "cp -v"
