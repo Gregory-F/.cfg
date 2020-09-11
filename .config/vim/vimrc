@@ -16,8 +16,15 @@ runtime! archlinux.vim
 
 " do not load defaults if ~/.vimrc is missing
 "let skip_defaults_vim=1"
+
 set relativenumber
 set autoindent
 set shiftwidth=4
 set smartindent
+set smartcase
+set shiftwidth=4 
+set nu
+set noswapfile
+set incsearch
 syntax on
+nnoremap ZS :w<cr>
