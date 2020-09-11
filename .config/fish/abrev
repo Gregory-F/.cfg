@@ -1,5 +1,7 @@
 #git abbr
 abbr -a -g gc 'git commit -m'
+abbr -a -g gs 'git status'
+abbr -a -g ga 'git add'
 abbr -a -g gclo 'git clone'
 abbr -a -g gps 'git push'
 abbr -a -g gpl 'git pull'
