@@ -8,6 +8,7 @@ abbr -a -g gpl 'git pull'
 abbr -a -g add 'config add'
 abbr -a -g commit 'config commit -m'
 abbr -a -g push 'config push'
+abbr -a -g tag 'git tag'
 
 #pacman abbr
 abbr -a -g orph 'pacman -Qdtq'
@@ -50,7 +51,7 @@ abbr -a -g uquetes 'vim ~/documents/uquetes'
 abbr -a -g all 'systemctl list-timers --all'
 abbr -a -g reload 'systemctl daemon-reload'
 abbr -a -g status 'config status'
-abbr -a -g list 'backup_tool --list'
+abbr -a -g list 'sudo backup_tool --list'
 
 #some ssh abreviations
 abbr -a -g arpa "sudo arp-scan 192.168.1.0/24"
