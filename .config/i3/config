@@ -34,7 +34,8 @@ font pango:DejaVu Sans 8
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec i3-sensible-terminal
+#bindsym $mod+Return exec i3-sensible-terminal
+bindsym $mod+Return exec termite
 
 # kill focused window
 bindsym $mod+w kill
@@ -171,11 +172,8 @@ bar {
 #####################
 
 
-bindsym $mod+c exec "chromium"
-bindsym $mod+$alt+c exec "chromium --incognito"
-bindsym $mod+$alt+g exec "google-chrome-stable"
-
-# shutdown
+bindsym $mod+c exec "firefox"
+bindsym $mod+$alt+c exec "firefox --private-window"
 bindsym $mod+Shift+s exec "shutdown now"
 
 # So we can switch for one tho the other WS using arrow keys
@@ -199,12 +197,12 @@ exec_always --no-startup-id feh --bg-scale /usr/share/feh/images/background.jpg
 #compton or in arch picom.
 exec_always --no-startup-id picom
 
-#here we start a terminal in WorkSpace2, go back to WorkSpace1 and open chromium there
-exec chromium
+#here we start a terminal in WorkSpace2, go back to WorkSpace1 and open firefox there
+exec firefox
 exec --no-startup-id i3-msg 'workspace Term; exec termite; workspace Www'
 
 #title shenanigan
-for_window [class=".*"] title_format "   %title"
+#for_window [class=".*"] title_format "   %title"
 
 
 # Pulse Audio controls
@@ -221,17 +219,17 @@ bindsym XF86MonBrightnessDown exec xbacklight -dec 20 # decrease screen brightne
 # Screen Shots
 bindsym Print exec scrot '%Y-%m-%d-%s_screenshot_$wx$h.jpg' -e 'mv $f ~/screenshots/'
 
-
+# No title bar
+new_window 1pixel
 
 ######################
 # Color configuration #
 ######################
 
 # class                 border  backgr. text    indicator child_border
-client.focused          #4c7899 #211C1C #ffffff #211C1C   #211C1C
-client.focused_inactive #333333 #5f676a #ffffff #484e50   #5f676a
-client.unfocused        #333333 #222222 #888888 #292d2e   #222222
-client.urgent           #2f343a #900000 #ffffff #900000   #900000
-client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
+client.focused              #333333   #2f2f2f   #f1f1f1   #d64937
+client.unfocused            #1b1b1b   #2a2a2a   #999999
+client.focused_inactive     #1b1b1b   #444444   #aaaaaa
+client.urgent               #d64937   #444444   #000000   #d64937
 
 client.background       #ffffff
