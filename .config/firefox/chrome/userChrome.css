@@ -1,0 +1,92 @@
+/* to keep firefox from exit full screen when the mouse reaches the top of the screen */
+#fullscr-toggler { display:none !important; }.tabs-newtab-button { visibility: collapse !important;}
+
+:root[sizemode="normal"] #nav-bar{ --uc-window-drag-space-width: 20px }
+
+#titlebar{ -moz-appearance: none !important; }
+#TabsToolbar{ min-height: 0px !important }
+
+#tabbrowser-tabs, #tabbrowser-tabs > .tabbrowser-arrowscrollbox, #tabbrowser-arrowscrollbox{ min-height: 0 !important; }
+
+:root:not([customizing]) #tabbrowser-tabs .tabs-newtab-button,
+:root:not([customizing]) #tabs-newtab-button,
+:root:not([customizing]) #TabsToolbar-customization-target > .toolbarbutton-1,
+:root:not([customizing]) #TabsToolbar .titlebar-button{
+  -moz-appearance: none !important;
+  height: 0px;
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+  -moz-box-align: stretch;
+  margin: 0 !important;
+}
+
+.accessibility-indicator,
+.private-browsing-indicator{ 
+  height: unset !important;
+}
+.accessibility-indicator > hbox{ padding-block: 0 !important }
+
+#tabbrowser-tabs .tabbrowser-tab{ height: var(--tab-min-height) }
+
+/* nice round borders */
+.tabbrowser-tab {
+  border-radius: 10px 10px 0px 0px / 15px 15px 0px 0px !important;
+}
+
+/* no tab separator */
+.tabbrowser-tab::after, .tabbrowser-tab::before { border-left:0px !important;}
+
+/* no x on no hover tab */
+#tabbrowser-tabs .tabbrowser-tab:not(:hover) .tab-close-button { display:none!important;}
+
+/* Curve active tab and slightly overlap neighboring tabs */
+.tabbrowser-tab .tab-background[selected="true"] {
+  margin-left: -1px !important;
+  margin-right: -1px !important;
+  border-radius: 10px 10px 0px 0px / 15px 15px 0px 0px !important;
+}
+
+/* Shorten the tab line along the tops of tabs */
+.tab-line {
+  margin-left: 9px !important;
+  margin-right: 9px !important;
+}
+
+/* Shorten the vertical lines between background tabs */
+.tabbrowser-tab::before, .tabbrowser-tab::after {
+  margin-top: 9px !important;
+}
+
+/* hide arrows */
+#back-button, #forward-button { display:none!important; }
+
+#tabbrowser-tabs .tabbrowser-tab[first-visible-tab="true"][last-visible-tab="true"]{
+  visibility: collapse !important;
+}
+
+/* Button re-styling */
+#tabs-newtab-button:hover,
+#tabbrowser-tabs .tabs-newtab-button:hover{ background-color: var(--toolbarbutton-hover-background) }
+
+#tabs-newtab-button > .toolbarbutton-icon,
+#tabbrowser-tabs .tabs-newtab-button > .toolbarbutton-icon{
+  padding: 0 !important;
+  transform: scale(0.6);
+  background-color: transparent !important;
+}
+/* Extra top padding  in maximized window */
+@media (-moz-os-version: windows-win10){
+  :root[sizemode="maximized"] #navigator-toolbox{ padding-top:7px !important; }
+}
+/* Fix window controls not being clickable */
+:root[tabsintitlebar] #toolbar-menubar[autohide="true"][inactive]{
+  transition: height 0ms steps(1) 80ms;
+}
+#nav-bar{
+  border-inline: var(--uc-window-drag-space-width) solid var(--toolbar-bgcolor);
+}
+
+#urlbar-input::selection {
+     color: white !important; /* text */
+     background-color: #191919 !important; /* background nice blue */
+ }
