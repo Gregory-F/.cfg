@@ -52,6 +52,10 @@ abbr -a -g all 'systemctl list-timers --all'
 abbr -a -g reload 'systemctl daemon-reload'
 abbr -a -g status 'config status'
 abbr -a -g list 'sudo backup_tool --list'
+abbr -a -g vpnc 'sudo protonvpn c -f'
+abbr -a -g vpns 'protonvpn s'
+abbr -a -g vpnd 'sudo protonvpn d'
+abbr -a -g vpnr 'sudo protonvpn r'
 
 #some ssh abreviations
 abbr -a -g arpa "sudo arp-scan 192.168.1.0/24"
