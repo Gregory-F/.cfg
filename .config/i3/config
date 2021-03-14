@@ -99,32 +99,43 @@ bindsym $mod+q focus parent
 # focus the child container
 #bindsym $mod+d focus child
 
-# switch to workspace
-bindsym $mod+ampersand workspace Www
-bindsym $mod+eacute workspace Term
-bindsym $mod+quotedbl workspace  3
-bindsym $mod+apostrophe workspace 4
-bindsym $mod+parenleft workspace 5
-bindsym $mod+minus workspace 6
-bindsym $mod+egrave workspace 7
-bindsym $mod+underscore workspace 8
-bindsym $mod+ccedilla workspace 9
-bindsym $mod+agrave workspace 0
+set $ws1 Navigateur
+set $ws2 Terminal
+set $ws3 Bureau:3
+set $ws4 Bureau:4
+set $ws5 Bureau:5
+set $ws6 Bureau:6
+set $ws7 Bureau:7
+set $ws8 Bureau:8
+set $ws9 Bureau:9
+set $ws10 Bureau:10
+
+bindsym $mod+1 workspace $ws1
+bindsym $mod+2 workspace $ws2
+bindsym $mod+3 workspace $ws3
+bindsym $mod+4 workspace $ws4
+bindsym $mod+5 workspace $ws5
+bindsym $mod+6 workspace $ws6
+bindsym $mod+7 workspace $ws7
+bindsym $mod+8 workspace $ws8
+bindsym $mod+9 workspace $ws9
+bindsym $mod+0 workspace $ws10
 
 # move focused container to workspace
-bindsym $mod+Shift+ampersand move container to workspace Www
-bindsym $mod+Shift+eacute move container to workspace Term
-bindsym $mod+Shift+quotedbl move container to workspace 3
-bindsym $mod+Shift+apostrophe move container to workspace 4
-bindsym $mod+Shift+5 move container to workspace 5
-bindsym $mod+Shift+minus move container to workspace 6
-bindsym $mod+Shift+egrave move container to workspace 7
-bindsym $mod+Shift+underscore move container to workspace 8
-bindsym $mod+Shift+ccedilla move container to workspace 9
-bindsym $mod+Shift+agrave move container to workspace 0
+bindsym $mod+Shift+1 move container to workspace $ws1
+bindsym $mod+Shift+2 move container to workspace $ws2
+bindsym $mod+Shift+3 move container to workspace $ws3
+bindsym $mod+Shift+4 move container to workspace $ws4
+bindsym $mod+Shift+5 move container to workspace $ws5
+bindsym $mod+Shift+6 move container to workspace $ws6
+bindsym $mod+Shift+7 move container to workspace $ws7
+bindsym $mod+Shift+8 move container to workspace $ws8
+bindsym $mod+Shift+9 move container to workspace $ws9
+bindsym $mod+Shift+0 move container to workspace $ws10
 
 #moving some windows to specific WorkSpaces
-#for_window [class="Pcmanfm"] move to workspace 8 PcManFm, workspace 8 PcManFm, focus
+for_window [class="firefox"] move to workspace $ws1, workspace $ws1, focus
+#for_window [class="Termite"] move to workspace $ws2, workspace $ws2
 
 
 # reload the configuration file
@@ -199,7 +210,7 @@ exec_always --no-startup-id picom
 
 #here we start a terminal in WorkSpace2, go back to WorkSpace1 and open firefox there
 exec firefox
-exec --no-startup-id i3-msg 'workspace Term; exec termite; workspace Www'
+exec --no-startup-id i3-msg 'workspace $ws2; exec termite; workspace $ws1'
 
 #title shenanigan
 #for_window [class=".*"] title_format "   %title"
