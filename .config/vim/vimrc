@@ -28,3 +28,5 @@ set noswapfile
 set incsearch
 syntax on
 nnoremap ZS :w<cr>
+
+set viminfo+=n~/.config/vim/viminfo
