@@ -10,3 +10,7 @@ alias config='/usr/bin/git --git-dir=/home/greg/.cfg/ --work-tree=/home/greg'
 export IPYTHONDIR="$XDG_CONFIG_HOME"/jupyter
 export JUPYTER_CONFIG_DIR="$XDG_CONFIG_HOME"/jupyter
 set GNUPGHOME ~/.config/gnupg/
+
+############
+#set -Ux variable value
+#this sets environement variable.
