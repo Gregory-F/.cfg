@@ -94,7 +94,7 @@ color14 =   #899ca1
 color15 =   #f8f8f2
 
 [hints]
-font = Monospace 14
+#font = Monospace 18
 #foreground = #06c800
 #background = #3f3f3f
 #active_foreground = #e68080
