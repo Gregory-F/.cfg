@@ -135,7 +135,7 @@ bindsym $mod+Shift+0 move container to workspace $ws10
 
 #moving some windows to specific WorkSpaces
 for_window [class="firefox"] move to workspace $ws1, workspace $ws1, focus
-#for_window [class="Termite"] move to workspace $ws2, workspace $ws2
+for_window [class="Termite"] move to workspace $ws2, workspace $ws2
 
 
 # reload the configuration file
@@ -208,9 +208,8 @@ exec_always --no-startup-id feh --bg-scale /usr/share/feh/images/background.jpg
 #compton or in arch picom.
 exec_always --no-startup-id picom
 
-#here we start a terminal in WorkSpace2, go back to WorkSpace1 and open firefox there
 exec firefox
-exec --no-startup-id i3-msg 'workspace $ws2; exec termite; workspace $ws1'
+exec termite
 
 #title shenanigan
 for_window [class=".*"] title_format " %title"
