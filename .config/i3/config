@@ -35,7 +35,7 @@ floating_modifier $mod
 
 # start a terminal
 #bindsym $mod+Return exec i3-sensible-terminal
-bindsym $mod+Return exec termite
+bindsym $mod+Return exec kitty
 
 # kill focused window
 bindsym $mod+w kill
@@ -135,7 +135,7 @@ bindsym $mod+Shift+0 move container to workspace $ws10
 
 #moving some windows to specific WorkSpaces
 for_window [class="firefox"] move to workspace $ws1, workspace $ws1, focus
-for_window [class="Termite"] move to workspace $ws2, workspace $ws2
+for_window [class="kitty"] move to workspace $ws2, workspace $ws2
 
 
 # reload the configuration file
@@ -210,8 +210,8 @@ exec_always --no-startup-id feh --bg-scale /usr/share/feh/images/background.jpg
 #compton or in arch picom.
 exec_always --no-startup-id picom
 
-exec firefox
-exec termite
+exec_always --no-startup-id firefox
+exec_always --no-startup-id kitty
 
 #title shenanigan
 for_window [class=".*"] title_format " %title"
