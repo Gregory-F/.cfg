@@ -58,4 +58,4 @@ abbr -a -g vpnr 'protonvpn-cli r'
 
 #some ssh abreviations
 abbr -a -g arpa "sudo arp-scan 192.168.1.0/24"
-abbr -a -g synct "rsync -ravzP --delete ~/usb/ totor@192.168.1.41:/home/totor/Documents/.usb"
+abbr -a -g synct "rsync -ralvzP --delete --safe-links ~/usb/ totor@192.168.1.19:/home/totor/Documents/.usb"
