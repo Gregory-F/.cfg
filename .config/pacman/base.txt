@@ -7,3 +7,5 @@ polkit
 pacman-contrib
 grub
 fish
+man-pages
+man-db
