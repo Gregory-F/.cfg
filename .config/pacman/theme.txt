@@ -6,3 +6,6 @@ adapta-gtk-theme
 arc-gtk-theme
 arc-icon-theme
 lxappearance
+adobe-source-code-pro-fonts
+cantarell-fonts
+noto-fonts-emoji
