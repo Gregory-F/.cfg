@@ -136,7 +136,8 @@ bindsym $mod+Shift+0 move container to workspace $ws10
 
 #moving some windows to specific WorkSpaces
 for_window [class="firefox"] move to workspace $ws1, workspace $ws1, focus
-for_window [class="kitty"] move to workspace $ws2, workspace $ws2
+for_window [class="kitty"] move to workspace $ws2
+#, workspace $ws2
 
 
 # reload the configuration file
