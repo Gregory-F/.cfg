@@ -5,6 +5,7 @@ kitty
 firefox
 w3m
 ranger
+mpv
 feh
 grub-customizer
 lightdm
