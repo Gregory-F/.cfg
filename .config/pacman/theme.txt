@@ -1,0 +1,8 @@
+adwaita-icon-theme
+hicolor-icon-theme
+libcanberra
+libcanberra
+adapta-gtk-theme
+arc-gtk-theme
+arc-icon-theme
+lxappearance
