@@ -1,0 +1,9 @@
+neofetch
+linux-lts
+linux-lts-headers
+networkmanager
+broadcom-wl-dkms
+polkit
+pacman-contrib
+grub
+fish
