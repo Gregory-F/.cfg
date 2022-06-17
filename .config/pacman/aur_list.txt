@@ -1,5 +1,0 @@
-gscreenshot
-nvidia-390xx-dkms
-paru
-protonvpn
-timeshift

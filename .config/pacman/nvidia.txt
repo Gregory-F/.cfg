@@ -1,3 +1,0 @@
-nvidia-settings
-libxnvctrl
-libvdpau
