@@ -52,10 +52,7 @@ abbr -a -g reload 'systemctl daemon-reload'
 abbr -a -g status 'config status'
 abbr -a -g list 'sudo timeshift --list'
 abbr -a -g restore 'sudo timeshift --restore'
-abbr -a -g vpnc 'protonvpn-cli c'
-abbr -a -g vpns 'protonvpn-cli s'
-abbr -a -g vpnd 'protonvpn-cli d'
-abbr -a -g vpnr 'protonvpn-cli r'
+abbr -a -g vpnc 'sudo openvpn /etc/openvpn/client/nl-free-02.protonvpn.net.udp.ovpn'
 
 #some ssh abreviations
 abbr -a -g arpa "sudo arp-scan 192.168.1.0/24"
