@@ -15,7 +15,7 @@ abbr -a -g orph 'pacman -Qdtq'
 abbr -a -g inst 'sudo pacman -S'
 abbr -a -g cherch 'pacman -Ss'
 abbr -a -g remove 'sudo pacman -Rns'
-abbr -a -g clean 'yay -Sc'
+abbr -a -g clean 'paru -Sc'
 
 #pipenv & python abrv
 abbr -a -g pvs 'pipenv shell'
@@ -44,15 +44,11 @@ abbr -a -g vims 'sudo vim'
 abbr -a -g eject 'sudo eject -v'
 abbr -a -g fm 'ranger'
 abbr -a -g nf 'clear;neofetch --ascii ~/.config/neofetch/ascii'
-abbr -a -g bquetes 'vim ~/documents/bquetes'
-abbr -a -g cquetes 'vim ~/documents/cquetes'
-abbr -a -g uquetes 'vim ~/documents/uquetes'
 abbr -a -g all 'systemctl list-timers --all'
 abbr -a -g reload 'systemctl daemon-reload'
 abbr -a -g status 'config status'
 abbr -a -g list 'sudo timeshift --list'
 abbr -a -g restore 'sudo timeshift --restore'
-abbr -a -g vpnc 'sudo openvpn /etc/openvpn/client/nl-free-02.protonvpn.net.udp.ovpn'
 
 #some ssh abreviations
 abbr -a -g arpa "sudo arp-scan 192.168.1.0/24"
