@@ -1,9 +1,9 @@
-set PATH $PATH $HOME/bin
+set -ax PATH $HOME/bin
 
-source ~/.config/fish/abrev
+source $HOME/.config/fish/abrev
 
 set fish_greeting " Go Fish !!!"
-neofetch --ascii ~/.config/neofetch/ascii
+neofetch
 
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
