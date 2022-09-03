@@ -49,7 +49,8 @@ abbr -a -g reload 'systemctl daemon-reload'
 abbr -a -g status 'config status'
 abbr -a -g list 'sudo timeshift --list'
 abbr -a -g restore 'sudo timeshift --restore'
+abbr -a -g vpns 'nmcli connection show'
 
 #some ssh abreviations
-abbr -a -g arpa "sudo arp-scan 192.168.1.0/24"
+abbr -a -g arpa "sudo arp-scan --localnet"
 abbr -a -g synct "rsync -ralvzP --delete --safe-links ~/usb/ totor@192.168.1.19:/home/totor/Documents/.usb"
