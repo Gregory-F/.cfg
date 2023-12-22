@@ -15,7 +15,7 @@ abbr -a -g orph 'pacman -Qdtq'
 abbr -a -g inst 'sudo pacman -S'
 abbr -a -g cherch 'pacman -Ss'
 abbr -a -g remove 'sudo pacman -Rns'
-abbr -a -g clean 'paru -Sc'
+abbr -a -g clean 'yay -Sc'
 
 #pipenv & python abrv
 abbr -a -g pvs 'pipenv shell'
@@ -39,7 +39,7 @@ abbr -a -g cpd "cp -rv"
 abbr -a -g cps "sudo cp -v"
 abbr -a -g cpds "sudo cp -rv"
 abbr -a -g pg 'ping -c 5 8.8.8.8'
-abbr -a -g maj "sudo pacman -Syu"
+abbr -a -g maj "clear;sudo pacman -Syu"
 abbr -a -g abrv 'vim ~/.config/fish/abrev'
 abbr -a -g vims 'sudo vim'
 abbr -a -g eject 'sudo eject -v'
